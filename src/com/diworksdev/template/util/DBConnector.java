@@ -7,9 +7,10 @@ import java.sql.SQLException;
 public class DBConnector {
 	//JDBCドライバー（JDBCとデータベースとの通信を取り持つためのライブラリ）の名前を変数に代入している
 	private static String driverName ="com.mysql.jdbc.Driver";
-	private static String url ="jdbc:mysql://localhost:8889/ecsite?autoReconnect=true&useSSL=false";
+	private static String url ="jdbc:mysql://localhost:8889/ecsite";
 	private static String user ="root";
 	private static String password ="root";
+
 	public Connection getConnection() {
 		Connection con = null;
 		//接続情報から自分のパソコンにインストールされているMySQLへ接続する準備が整います。
